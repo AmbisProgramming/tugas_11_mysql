@@ -1,0 +1,9 @@
+mysql -uroot 
+
+create user 'Niomic' identified by 'c0b4d1b4c4' ;
+
+update User set Password = password('indonesiaku') where User = 'Niomic' ;
+
+grant all on belajar.mahasiswa to Niomic ;
+
+delete from User where User = 'Niomic' ;
